@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="LembreSee"/>
+    
   </div>
 </template>
 
@@ -23,6 +23,20 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-color: green;
+  background-image: url("./assets/btop.jpg");
+  background-size: 100% 100%;
+  
+  /* margin-top: 60px; */
 }
+
+.navbar-brand {
+    /* background:transparent; */
+}
+
+.bg-light {
+    background-color: transparent;
+}
+
+
 </style>
