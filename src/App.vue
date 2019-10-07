@@ -1,17 +1,23 @@
 <template>
-  <div id="app">
-    <HelloWorld msg="LembreSee"/>
+  <div id="app" >
+    <NavBar msg="LembreSee"/>
+    <div>
+
+      <input type="text"><br>
+
+      
+    </div>
     
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    NavBar
   }
 }
 </script>
@@ -25,17 +31,12 @@ export default {
   color: #2c3e50;
   background-color: green;
   background-image: url("./assets/btop.jpg");
+  min-height: 1000px;
+  width: auto;
   background-size: 100% 100%;
+  padding-top: 10%;
   
   /* margin-top: 60px; */
-}
-
-.navbar-brand {
-    /* background:transparent; */
-}
-
-.bg-light {
-    background-color: transparent;
 }
 
 
