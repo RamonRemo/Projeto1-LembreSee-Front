@@ -3,8 +3,8 @@
     
     <nav class="navbar fixed-top navbar-light">
     <a class="navbar-brand" href="#">
-      <img src="../assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-      LembreSee
+      <!-- <img src="../assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+      🍂 LembreSee
     </a>
     <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Sobre</button>
     </nav>
