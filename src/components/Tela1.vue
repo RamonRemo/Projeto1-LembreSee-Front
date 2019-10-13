@@ -1,59 +1,40 @@
 <template>
   <div>
-   <button class="btn btn-light" @click="postStuff">+</button>
-
-    <div class="tela1">
-    <card></card>
-    <card></card>
-    <card></card>
-    <card></card>
-
+    <!-- <button class="btn btn-light" @click="postStuff">+</button> -->
+    <div onload="print()" class="tela1">
+      <!-- <h1>{{this.$store.state.info}}</h1> -->
+      <div v-for="item in this.$store.state.info.data" :key="item.id">
+        <card :nome="item.nome" :desc="item.desc"></card>
+      </div>
     </div>
   </div>
-   
-  
-
 </template>
 
 <script>
-import Card from './Card.vue'
-
+import Card from "./Card.vue";
 
 export default {
   components: {
-    Card,
+    Card
   },
   data() {
     return {
       param: "",
-      info: ""
+      info: this.$store.state.info.data
     };
   },
   methods: {
-    postStuff() {
-      // this.$http.post("http://localhost:8081/", nome);
-    this.axios.post('http://localhost:8080/', {
-      nome: 'Fred',
-      desc: 'Flintstone'
-    })
-      this.param = ''
-    },
-    getAll(){
-      this.$http.get(url).then(response => (this.info = response));
-    }
   }
-
-}
+};
 </script>
 
 <style>
-
-.tela1{
+.tela1 {
   /* border: 1px solid red; */
   min-height: 800px;
-  max-width:  100%;
+  max-width: 100%;
 
-  display: flex ;
+  display: flex;
   flex-wrap: wrap;
 }
 </style>

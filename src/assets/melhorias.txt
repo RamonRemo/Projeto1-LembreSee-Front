@@ -6,3 +6,4 @@
 - validacao de contas google,facebook
 - criacao e validacao de login
 - remover o maldito rezize item
+- consertar essa bosta, de methodos http no app

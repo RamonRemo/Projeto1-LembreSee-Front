@@ -1,14 +1,21 @@
 <template>
   <div class="card">
 
-    <input class="" type="text" >
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <input class="" type="text" :value="nome" placeholder="Titulo" >
+    <textarea name="" id="" cols="30" placeholder="Digite algo..." :value="desc"  rows="10"></textarea>
   </div>
 </template>
 
 <script>
   export default {
-    
+    data() {
+      return {
+      }
+    },
+    props: {
+      nome: String,
+      desc: String,
+    },
   }
 
 
