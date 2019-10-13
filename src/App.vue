@@ -22,7 +22,6 @@ export default {
         "./assets/img1.jpg",
         "./assets/img2.jpg",
         "./assets/img3.jpg",
-        "./assets/img4.jpg",
         "./assets/img5.jpg",
         "./assets/img6.jpg",
       ]
@@ -54,7 +53,7 @@ export default {
   min-height: 1000px;
   width: auto;
   background-size: 100% 100%;
-  padding-top: 4%;
+  padding-top: 5%;
   
   /* margin-top: 60px; */
 }

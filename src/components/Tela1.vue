@@ -49,7 +49,7 @@ export default {
 <style>
 
 .tela1{
-  border: 1px solid white;
+  /* border: 1px solid red; */
   min-height: 800px;
   max-width:  100%;
 
