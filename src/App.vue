@@ -45,7 +45,7 @@ export default {
     changeBackgroundImage() {
       this.item = this.images[Math.floor(Math.random() * this.images.length)]
       document.body.style.backgroundImage= 'url(' + require(`${this.item}`) + ')'
-      document.body.style.backgroundSize  =  '100% 100%'
+      document.body.style.backgroundSize  =  '100%'
     },
     
   },
@@ -60,15 +60,14 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 750px;
   text-align: center;
   color: #ffffff;
-  /* background-color: verdo; */
-  /* background-image: url("./assets/img4.jpg"); */
-  min-height: 1000px;
   width: auto;
-  background-size: 100% 100%;
   padding-top: 5%;
-  
+  /* background-image: url("./assets/img4.jpg"); */
+  /* background-size: 100% 100%; */
+  /* background-position: 50% 50%; */
   /* margin-top: 60px; */
 }
 

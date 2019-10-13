@@ -26,7 +26,8 @@
 
   /* line-height: 1;     */
   width: 240px;    
-  margin: 25px;    
+  margin: 15px;  
+  margin-bottom: 0px;  
   min-height:250px;
   max-height:250px;
   padding-top:0px;

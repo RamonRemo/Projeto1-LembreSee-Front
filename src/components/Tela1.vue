@@ -1,9 +1,8 @@
 <template>
   <div>
     <button class="btn btn-light" @click="postStuff">+</button>
-    <div onload="print()" class="tela1">
-      <!-- <h1>{{this.$store.state.info}}</h1> -->
-      <div v-for="item in this.$store.state.info.data" :key="item.id">
+    <div class="tela1">
+      <div id="lop" v-for="item in this.$store.state.info.data" :key="item.id">
         <card :nome="item.nome" :desc="item.desc"></card>
       </div>
     </div>
@@ -28,21 +27,32 @@ export default {
       this.axios
         .get("http://localhost:8080/")
         .then(response => (this.$store.state.info = response))
-        .then(() => console.log(this.$store.state.info.data));
+        // .then(() => console.log(this.$store.state.info.data));
     },
-     postStuff(nome,desc) {
+     postStuff() {
       this.axios.post("http://localhost:8080/", {
         nome: "",
         desc: ""
       }).then(() => this.getAll())
     },
-  },
-  created () {
-    console.log('juju');
+    mountedOne(){
+      let x;
+      this.axios
+        .get("http://localhost:8080/")
+        .then(response => (this.$store.state.info = response))
+        .then(() => console.log(this.$store.state.info.data))
+        .then(() => x = this.$store.state.info.data[0])
+        .then(() => {
+          if(x == undefined){
+            this.postStuff();
+          }  
+        })
+
+
+    }
   },
   mounted () {
-    console.log('come abacate bb');
-    this.getAll();
+      this.mountedOne();
   },
 };
 </script>
@@ -55,5 +65,10 @@ export default {
 
   display: flex;
   flex-wrap: wrap;
+}
+
+#lop{
+  height: 300px;
+  margin-bottom: 
 }
 </style>
