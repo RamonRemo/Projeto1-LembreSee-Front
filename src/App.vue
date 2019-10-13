@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <NavBar msg="LembreSee"/>
-    <button class="btn btn-light" @click="postStuff">+</button>
     <tela1/>
   </div>
 </template>
@@ -23,9 +22,21 @@ export default {
       images:[
         "./assets/img1.jpg",
         "./assets/img2.jpg",
-        "./assets/img3.jpg",
-        "./assets/img5.jpg",
+        // "./assets/img3.jpg",
+        // "./assets/img4.jpg",
+        // "./assets/img5.jpg",
         "./assets/img6.jpg",
+        "./assets/img7.jpeg",
+        "./assets/img8.jpeg",
+        "./assets/img9.jpeg",
+        "./assets/img10.jpeg",
+        "./assets/img11.jpeg",
+        "./assets/img12.jpeg",
+        "./assets/img13.jpeg",
+        "./assets/img14.jpeg",
+        "./assets/img15.jpeg",
+        "./assets/img16.jpeg",
+        "./assets/img17.jpeg",
       ],
       data : this.$store.state.info.data
     }
@@ -36,30 +47,10 @@ export default {
       document.body.style.backgroundImage= 'url(' + require(`${this.item}`) + ')'
       document.body.style.backgroundSize  =  '100% 100%'
     },
-    getAll() {
-      this.axios
-        .get("http://localhost:8080/")
-        .then(response => (this.$store.state.info = response))
-        .then(() => console.log(this.$store.state.info.data));
-    },
-     postStuff() {
-      this.axios.post("http://localhost:8080/", {
-        nome: "Fred",
-        desc: "Flintstone"
-      }).then(() => this.getAll())
-    },
+    
   },
   mounted: function(){
     this.changeBackgroundImage()
-    this.getAll();
-  },
-  watch: {
-    data(n, o) {
-      if( n != o){
-        this.getAll()
-        console.log('test')
-      }
-    }
   },
 }
 </script>
