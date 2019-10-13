@@ -26,49 +26,48 @@ export default {
     getAll() {
       this.axios
         .get("http://localhost:8080/")
-        .then(response => (this.$store.state.info = response))
-        // .then(() => console.log(this.$store.state.info.data));
+        .then(response => (this.$store.state.info = response));
+      // .then(() => console.log(this.$store.state.info.data));
     },
-     postStuff() {
-      this.axios.post("http://localhost:8080/", {
-        nome: "",
-        desc: ""
-      }).then(() => this.getAll())
+    postStuff() {
+      this.axios
+        .post("http://localhost:8080/", {
+          nome: "",
+          desc: ""
+        })
+        .then(() => this.getAll());
     },
-    mountedOne(){
+    mountedOne() {
       let x;
       this.axios
         .get("http://localhost:8080/")
         .then(response => (this.$store.state.info = response))
         .then(() => console.log(this.$store.state.info.data))
-        .then(() => x = this.$store.state.info.data[0])
+        .then(() => (x = this.$store.state.info.data[0]))
         .then(() => {
-          if(x == undefined){
+          if (x == undefined) {
             this.postStuff();
-          }  
-        })
-
-
+          }
+        });
     }
   },
-  mounted () {
-      this.mountedOne();
-  },
+  mounted() {
+    this.mountedOne();
+  }
 };
 </script>
 
 <style>
 .tela1 {
   /* border: 1px solid red; */
-  min-height: 800px;
+  min-height: 750px;
   max-width: 100%;
 
   display: flex;
   flex-wrap: wrap;
 }
 
-#lop{
+#lop {
   height: 300px;
-  margin-bottom: 
 }
 </style>
