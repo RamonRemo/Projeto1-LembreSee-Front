@@ -1,23 +1,19 @@
 <template>
   <div id="app">
     <NavBar msg="LembreSee"/>
-    <div>
-
-      <input type="text"><br>
-
-      
-    </div>
-    
+    <tela1/>
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
+import Tela1 from './components/Tela1.vue'
+
 
 export default {
   name: 'app',
   components: {
-    NavBar
+    NavBar,Tela1,
   },
   data(){
     return{
@@ -35,18 +31,11 @@ export default {
   methods:{
     changeBackgroundImage() {
       this.item = this.images[Math.floor(Math.random() * this.images.length)]
-      console.log(this.item)
-      // document.body.style.backgroundImage = "url(" + this.item + ")"
-
-      document.body.style.backgroundImage = `url(${require(this.item)})`;
-      // document.body.style.backgroundImage = "url(" + ${require(item)} + ")";
-      // document.body.style.backgroundImage = "url('./assets/img6.jpg')";
-      // document.body.style.backgroundImage = `url(${require('./assets/img1.jpg')})`;
+      document.body.style.backgroundImage= 'url(' + require(`${this.item}`) + ')'
       document.body.style.backgroundSize  =  '100% 100%'
-      // document.body.style.background= 'red'
     },
   },
-  created: function(){
+  mounted: function(){
     this.changeBackgroundImage()
   },
   
@@ -65,7 +54,7 @@ export default {
   min-height: 1000px;
   width: auto;
   background-size: 100% 100%;
-  padding-top: 6%;
+  padding-top: 4%;
   
   /* margin-top: 60px; */
 }

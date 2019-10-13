@@ -1,0 +1,8 @@
+- adicionar try catchs no front e back 
+- classes de exceptions
+- responsividade
+- lembretes redimensionaveis
+- lembretes arrastaveis
+- validacao de contas google,facebook
+- criacao e validacao de login
+- remover o maldito rezize item

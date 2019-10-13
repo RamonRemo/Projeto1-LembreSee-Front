@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import App from './App.vue'
-import store from './store/store'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import bootstrap from 'bootstrap'
@@ -13,7 +12,7 @@ Vue.config.productionTip = false
 
 new Vue({
   el: '#app',
-  store,axios,bootstrap,
+  axios,bootstrap,
   render: h => h(App),
   data () {
     return {
