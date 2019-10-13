@@ -21,23 +21,25 @@ export default {
       item: String, 
       images:[
         "./assets/img1.jpg",
-        "./assets/img2.jpg",
-        // "./assets/img3.jpg",
-        // "./assets/img4.jpg",
-        // "./assets/img5.jpg",
-        "./assets/img6.jpg",
-        "./assets/img7.jpeg",
+        // "./assets/img2.jpg",
         "./assets/img8.jpeg",
-        "./assets/img9.jpeg",
-        "./assets/img10.jpeg",
+        // "./assets/img10.jpeg",
         "./assets/img11.jpeg",
         "./assets/img12.jpeg",
         "./assets/img13.jpeg",
         "./assets/img14.jpeg",
-        "./assets/img15.jpeg",
         "./assets/img16.jpeg",
         "./assets/img17.jpeg",
+        "./assets/img18.jpeg",
+        // "./assets/img23.jpeg",
+        "./assets/img24.jpeg",
+        "./assets/img26.jpeg",
+        "./assets/img27.jpeg",
+        "./assets/img29.jpeg",
+        // "./assets/img33.jpeg",
+
       ],
+      //isso aki tem uso?
       data : this.$store.state.info.data
     }
   },
@@ -46,6 +48,7 @@ export default {
       this.item = this.images[Math.floor(Math.random() * this.images.length)]
       document.body.style.backgroundImage= 'url(' + require(`${this.item}`) + ')'
       document.body.style.backgroundSize  =  '100%'
+      console.log(this.item)
     },
     
   },

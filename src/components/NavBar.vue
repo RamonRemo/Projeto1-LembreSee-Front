@@ -6,7 +6,7 @@
       <!-- <img src="../assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
       🍂 {{msg}}
     </a>
-    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Sobre</button>
+    <button class="btn btn-light my-2 my-sm-0" type="submit">Sobre</button>
     </nav>
   </div>
 </template>
