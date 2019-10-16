@@ -1,11 +1,24 @@
-- adicionar try catchs no front e back 
-- classes de exceptions
-- responsividade
-- lembretes redimensionaveis
-- lembretes arrastaveis
-- validacao de contas google,facebook
-- criacao e validacao de login
-- consertar essa bosta, de methodos http no app
-- distorcao da imagem se adicionados mtos elementos
-- adicionar a parte "SOBRE"
-- descobrir porque nao consigo mudar a fonte do texto
+NECESSARIAS
+  - adicionar o metodo delete
+  - adicionar a parte "SOBRE"
+  - descobrir porque nao consigo mudar a fonte do texto
+    -achar uma fonte e cor bacana e que combine
+  - postar no heroku
+    - mudar o banco pra postgree?
+
+ACONSELHAVEIS
+  - pensar numa forma mais inteligente do que simplesmente encher o componente card de metodos
+  - comentarios e verificaçao da nomenclatura das variaveis
+  - validacao de contas google,facebook
+  - classes de exceptions
+  - responsividade
+  - lembretes redimensionaveis
+  - lembretes arrastaveis
+  - criacao e validacao de login
+  - adicionar try catchs no front e back 
+  - achar uma forma de substituir esses props de merda
+  - colocar um timer no put
+
+
+OPCIONAIS
+  - paleta de cores, pros post-it e pras fontes  
