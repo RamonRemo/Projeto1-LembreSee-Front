@@ -3,7 +3,7 @@
     <button class="btn btn-light" @click="postStuff">+</button>
     <div class="tela1">
       <div id="lop" v-for="item in this.$store.state.info.data" :key="item.id">
-        <card :nome="item.nome" :desc="item.desc"></card>
+        <card :id="item.id" :nome="item.nome" :desc="item.desc"></card>
       </div>
     </div>
   </div>
@@ -18,7 +18,6 @@ export default {
   },
   data() {
     return {
-      param: "",
       info: this.$store.state.info.data
     };
   },

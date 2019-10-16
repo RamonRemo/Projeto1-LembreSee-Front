@@ -1,8 +1,8 @@
 <template>
   <div class="card">
 
-    <input class="" type="text" :value="nome" placeholder="Titulo" >
-    <textarea name="" id="" cols="30" placeholder="Digite algo..." :value="desc"  rows="10"></textarea>
+    <input class="" type="text" v-model="lnome" @keyup="editStuff()" placeholder="Titulo" >
+    <textarea name="" id="ta" cols="30" placeholder="Digite algo..." v-model="ldesc" @keyup="editStuff()"  rows="10"></textarea>
   </div>
 </template>
 
@@ -10,14 +10,25 @@
   export default {
     data() {
       return {
+        ldesc: this.desc,
+        lnome: this.nome,
       }
     },
     props: {
+      id: Number,
       nome: String,
       desc: String,
     },
+    methods: {
+      editStuff(){
+      this.axios
+        .put(`http://localhost:8080/${this.id}` , {
+          nome: this.lnome,
+          desc: this.ldesc
+        })
+    },
+    },
   }
-
 
 </script>
 
@@ -75,9 +86,8 @@ input,textarea{
   
 }
 
-textarea{
-  resize: vertical;
-  
+#ta{
+  resize: none;
 }
 
 input{

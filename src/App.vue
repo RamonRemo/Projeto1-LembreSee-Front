@@ -21,22 +21,16 @@ export default {
       item: String, 
       images:[
         "./assets/img1.jpg",
-        // "./assets/img2.jpg",
         "./assets/img8.jpeg",
-        // "./assets/img10.jpeg",
         "./assets/img11.jpeg",
         "./assets/img12.jpeg",
         "./assets/img13.jpeg",
         "./assets/img14.jpeg",
-        "./assets/img16.jpeg",
         "./assets/img17.jpeg",
         "./assets/img18.jpeg",
-        // "./assets/img23.jpeg",
         "./assets/img24.jpeg",
-        "./assets/img26.jpeg",
         "./assets/img27.jpeg",
         "./assets/img29.jpeg",
-        // "./assets/img33.jpeg",
 
       ],
       //isso aki tem uso?
