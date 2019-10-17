@@ -1,8 +1,7 @@
 NECESSARIAS
-  - adicionar o metodo delete
-  - adicionar a parte "SOBRE"
   - descobrir porque nao consigo mudar a fonte do texto
     -achar uma fonte e cor bacana e que combine
+  - adicionar a parte "SOBRE"
   - postar no heroku
     - mudar o banco pra postgree?
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="btn btn-light" @click="postStuff">+</button>
+    <button class="btn btn-light shadow-none" @click="postStuff">+</button>
     <div class="tela1">
       <div id="lop" v-for="item in this.$store.state.info.data" :key="item.id">
         <card :id="item.id" :nome="item.nome" :desc="item.desc"></card>
