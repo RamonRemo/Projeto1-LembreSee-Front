@@ -1,6 +1,6 @@
 <template>
   <div class="sobre">
-    <br><h1>Sobre</h1><br>
+    <br><h1>Sobre</h1><br><br>
 
     <h3>Inicialmente, O LembreSee era apenas uma idéia pra praticar.</h3>
     <h3>
@@ -11,16 +11,15 @@
         Neste momento ele roda apenas num modo de Visualização, para portfólio mesmo.
     </h3>
 
-    <br><h1> Tecnologias Utilizadas </h1><br>
+    <br><h1>Tecnologias Utilizadas</h1><br><br>
     <h3>Java e SpringBoot no back.<a href="https://github.com/RamonRemo/Projeto1-LembreSee-back"> (Aqui!)</a></h3>
     <h3>VueJS com um pouco de BootStrap no front. <a href="https://github.com/RamonRemo/Projeto1-LembreSee-Front"> (Aqui!)</a></h3> 
     <h3>PostGreSql no banco.(era o unico que o heroku aceitava no modo gratuito haha)</h3>
 
-    <br><h1>O quem vem por aí?</h1><br>
+    <br><h1>O quem vem por aí?</h1><br><br>
     <h3> Como eu disse, ainda tenho muito o que melhorar, algumas coisas não fiz por falta de tempo outras por falta de conhecimento e outras por preguiça mesmo.
-          Algumas tenho uma boa ideia de por onde começar e o que fazer, Outras não tenho a minima ideia de como fazer!
+          Algumas tenho uma boa ideia de por onde começar e o que fazer, Outras não tenho a minima ideia de como fazer! Isso é bem legal e esses desafios me motivam. 
     </h3>
-    <h3> E isso é legal, esses desafios me motivam. </h3>
     <br>
     <ul>
       <li>[ ] Paleta de cores, pros post-it e pras fontes </li>
@@ -64,7 +63,9 @@
   background-image: url('https://images.pexels.com/photos/552789/pexels-photo-552789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   min-height: 750px;
   max-width: 100%;
-  font-family: 'Abel', sans-serif !important;
+  /* font-family: 'Abel', sans-serif !important; */
+  font-family: 'Amatic SC', cursive !important;
+
   color:white;
 
 }
@@ -80,8 +81,12 @@ ul,li,h3{
   list-style-type: none;
   text-align: justify;
   /* justify-content: left;  */
-  padding-left: 20px;
+  padding-left: 40px;
   padding-right: 20px; 
+}
+
+h1{
+  font-size: 50px !important; 
 }
 
 
