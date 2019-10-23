@@ -1,6 +1,6 @@
 <template>
-  <div class="sobre">
-    <br><h1>Sobre</h1><br><br>
+  <div class="sobre" id="sobre">
+    <br><br><h1>Sobre</h1><br><br>
 
     <h3>Inicialmente, O LembreSee era apenas uma idéia pra praticar.</h3>
     <h3>
@@ -35,12 +35,15 @@
     <h1>Contato</h1>
     <a href="https://www.linkedin.com/in/ramon-alex-19690a113/"> <img src="https://image.flaticon.com/icons/png/512/38/38669.png" alt=""></a>
     <a href="https://github.com/RamonRemo"> <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/github-square-512.png" alt=""></a>
+    <!-- <a href="https://www.linkedin.com/in/ramon-alex-19690a113/" class="fa fa-linkedin"></a> -->
+    <!-- <a href="https://github.com/RamonRemo" class="fa fa-github" ></a> -->
     <br>
     <a> 
       <span>
         ramonalexf@gmail.com
       </span>
     </a>
+
 
   </div>
 </template>
@@ -61,11 +64,13 @@
 .sobre{
   /* background-color:grey; */
   background-image: url('https://images.pexels.com/photos/552789/pexels-photo-552789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  /* background-image: url('https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   min-height: 750px;
-  max-width: 100%;
+  /* max-width: 100%; */
   /* font-family: 'Abel', sans-serif !important; */
   font-family: 'Amatic SC', cursive !important;
-
   color:white;
 
 }

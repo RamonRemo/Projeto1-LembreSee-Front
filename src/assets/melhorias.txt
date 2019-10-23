@@ -3,7 +3,7 @@ NECESSARIAS
   - adicionar a parte "SOBRE"
   - postar no heroku
     - mudar o banco pra postgree?
-  -melhorar a aparencia do sobre  
+  - transicao melhor no botao sobre 
 
 ACONSELHAVEIS
   - pensar numa forma melhor de limitar os characters, ta zuadaço
