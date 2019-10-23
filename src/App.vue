@@ -2,19 +2,21 @@
   <div id="app">
     <NavBar msg="LembreSee"/>
     <tela1/>
+    <Sobre/>
+
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
+import NavBar2 from './components/NavBar2.vue'
 import Tela1 from './components/Tela1.vue'
-
-
+import Sobre from './components/Sobre.vue'
 
 export default {
   name: 'app',
   components: {
-    NavBar,Tela1
+    NavBar,NavBar2,Tela1,Sobre
   },
   data(){
     return{
@@ -34,7 +36,7 @@ export default {
 
       ],
       //isso aki tem uso?
-      data : this.$store.state.info.data
+      data : this.$store.state.info.data,
     }
   },
   methods:{
@@ -44,7 +46,7 @@ export default {
       document.body.style.backgroundSize  =  '100%'
       console.log(this.item)
     },
-    
+
   },
   mounted: function(){
     this.changeBackgroundImage()
@@ -59,7 +61,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   /* min-height: 70px; */
   text-align: center;
-  color: #ffffff;
+  /* color: #ffffff; */
   width: auto;
   padding-top: 5%;
   /* background-image: url("./assets/img4.jpg"); */

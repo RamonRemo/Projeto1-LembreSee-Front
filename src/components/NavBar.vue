@@ -38,7 +38,7 @@ a {
 }
 .navbar{
   border:1.2px solid white;
-  background-color: grey;
+  background-color: rgb(26, 192, 26);
   background:transparent
 
   /* opacity: 0.5; */

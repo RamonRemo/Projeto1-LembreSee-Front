@@ -1,14 +1,12 @@
 <template>
-  <div class="card">
-
-    <!-- <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Reenie+Beanie&display=swap" rel="stylesheet">   -->
-    <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC:700|Reenie+Beanie&display=swap" rel="stylesheet">
+  <div class="card ">
     <div class="input-group">
-      <input maxlength="17" class="form-control shadow-none" type="text" v-model="lnome" @keyup="editStuff()" placeholder="Titulo" >
+      <input maxlength="21" class="form-control shadow-none" type="text" v-model="lnome" @keyup="editStuff()" placeholder="Titulo" >
       <div class="input-group-append">
         <button id="btn1" class="btn shadow-none" type="button" @click="deleteStuff()">x</button>
       </div>
     </div>
+
     <textarea maxlength="144" cols="30" placeholder="Digite algo..." v-model="ldesc" @keyup="editStuff()"  rows="10"></textarea>
 
   </div>
@@ -129,23 +127,20 @@ export default {
 
 input,
 textarea {
-  /* font-family: 'Amatic SC', cursive !important; */
+  font-family: 'Amatic SC', cursive !important;
   /* font-family: "Reenie Beanie" !important; */
-  font-family: 'Abel', sans-serif !important;
+  /* font-family: 'Abel', sans-serif !important; */
 
   resize: none !important;
   overflow:hidden !important;
   background-color: transparent;
-  font-size: 20px !important;
+  font-size: 24px !important;
   text-align: center;
   color: black !important;
   outline:none;
   box-shadow: inset 0 -1px 0 #ddd;
 
   border: none;
-}
-
-textarea{
 }
 
 .form-control{

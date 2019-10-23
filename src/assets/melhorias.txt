@@ -1,23 +1,31 @@
 NECESSARIAS
-  - descobrir porque nao consigo mudar a fonte do texto
-    -achar uma fonte e cor bacana e que combine
+  - necessario adicoinar multi-tela, router-view de preferencia
   - adicionar a parte "SOBRE"
   - postar no heroku
     - mudar o banco pra postgree?
+  -melhorar a aparencia do sobre  
 
 ACONSELHAVEIS
+  - pensar numa forma melhor de limitar os characters, ta zuadaço
   - pensar numa forma mais inteligente do que simplesmente encher o componente card de metodos
   - comentarios e verificaçao da nomenclatura das variaveis
   - validacao de contas google,facebook
   - classes de exceptions
   - responsividade
   - lembretes redimensionaveis
-  - lembretes arrastaveis
+  - lembretes arrastaveis e reorganizaveis
   - criacao e validacao de login
   - adicionar try catchs no front e back 
   - achar uma forma de substituir esses props de merda
   - colocar um timer no put
-
+  - a transicao da animaçao ta bugada
 
 OPCIONAIS
   - paleta de cores, pros post-it e pras fontes  
+  - fade in fade out nos wallpaper?s
+  
+  aparentemente posso pegar o indice durante o loop e passar ele,
+  <b-button class="mb-4" @click="add">add</b-button>
+    <b-list-group v-for="(aluno,i) in alunos" :key="aluno">
+      <b-list-group-item @click="remove(i)"> {{aluno}}</b-list-group-item>
+    </b-list-group>

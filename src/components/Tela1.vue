@@ -1,11 +1,16 @@
 <template>
   <div>
     <button class="btn btn-light shadow-none" @click="postStuff">+</button>
-    <div class="tela1">
+
+    <transition-group class="tela1"
+      enter-active-class="animated jackInTheBox"
+      leave-active-class="animated flipOutX"
+        >
       <div id="lop" v-for="item in this.$store.state.info.data" :key="item.id">
         <card :id="item.id" :nome="item.nome" :desc="item.desc"></card>
       </div>
-    </div>
+    </transition-group>
+    
   </div>
 </template>
 
