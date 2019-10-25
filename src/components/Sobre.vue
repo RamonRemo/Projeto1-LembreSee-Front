@@ -73,6 +73,7 @@
   font-family: 'Amatic SC', cursive !important;
   color:white;
 
+
 }
 
 img{
