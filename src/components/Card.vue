@@ -105,7 +105,8 @@ export default {
     #ffff88 82%,
     #ffffc6 100%
   ); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 ); 
+  /* IE6-9 fallback on horizontal gradient */
 }
 
 .card:after {
@@ -159,9 +160,9 @@ textarea {
 }
 
 
-input {
+/* input {
   top: 100%;
   height: 50px;
   border-bottom: 0.3px ridge rgb(201, 202, 183);
-}
+} */
 </style>
