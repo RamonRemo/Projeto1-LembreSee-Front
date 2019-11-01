@@ -17,7 +17,9 @@ export default {
   data() {
     return {
       ldesc: this.desc,
-      lnome: this.nome
+      lnome: this.nome,
+      urlL: 'http://localhost:8080/',
+      urlH: 'https://lembreseetestee.herokuapp.com/'
     };
   },
   props: {
@@ -27,17 +29,20 @@ export default {
   },
   methods: {
     editStuff() {
-      this.axios.put(`http://localhost:8080/${this.id}`, {
+      // this.axios.put(`${this.urlH}${this.id}`, {
+      this.axios.put(`${this.urlL}${this.id}`, {
         nome: this.lnome,
         desc: this.ldesc
       });
     },
     deleteStuff(){
-      this.axios.delete(`http://localhost:8080/${this.id}`).then(() => this.getAll());
+      // this.axios.delete(`${this.urlH}${this.id}`).then(() => this.getAll());
+      this.axios.delete(`${this.urlL}${this.id}`).then(() => this.getAll());
     },
     getAll() {
       this.axios
-        .get("http://localhost:8080/")
+        // .get(`${this.urlH}`)
+        .get(`${this.urlL}`)
         .then(response => (this.$store.state.info = response));
       // .then(() => console.log(this.$store.state.info.data));
     },
@@ -105,8 +110,7 @@ export default {
     #ffff88 82%,
     #ffffc6 100%
   ); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 ); 
-  /* IE6-9 fallback on horizontal gradient */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .card:after {
@@ -158,7 +162,6 @@ textarea {
   color: rgb(177, 179, 158) !important;
   /* border: none !important; */
 }
-
 
 /* input {
   top: 100%;

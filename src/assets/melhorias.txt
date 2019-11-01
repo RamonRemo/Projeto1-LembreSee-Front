@@ -1,8 +1,6 @@
 NECESSARIAS
   - necessario adicoinar multi-tela, router-view de preferencia
-  - adicionar a parte "SOBRE"
-  - postar no heroku
-    - mudar o banco pra postgree?
+  - mudar a navbar
   - transicao melhor no botao sobre 
 
 ACONSELHAVEIS

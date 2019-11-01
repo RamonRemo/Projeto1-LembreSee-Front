@@ -69,10 +69,10 @@
 .sobre{
   /* background-color:grey; */
   /* background-image: url('https://images.pexels.com/photos/552789/pexels-photo-552789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
-  /* background-image: url('https://images.pexels.com/photos/2524767/pexels-photo-2524767.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'); */
-  background-image: url('https://images.pexels.com/photos/159020/sunset-sky-afterglow-evening-sky-159020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url('https://images.pexels.com/photos/2524767/pexels-photo-2524767.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  /* background-image: url('https://images.pexels.com/photos/159020/sunset-sky-afterglow-evening-sky-159020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   min-height: 750px;
   /* max-width: 100%; */
   /* font-family: 'Abel', sans-serif !important; */

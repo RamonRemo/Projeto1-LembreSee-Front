@@ -1,6 +1,7 @@
 <template>
   <div>
-    <button class="btn btn-light shadow-none" @click="postStuff">+</button>
+    
+    <button id="botao2" class="btn btn-light shadow-none" @click="postStuff">+</button>
 
     <transition-group class="tela1"
       enter-active-class="animated jackInTheBox"
@@ -23,19 +24,23 @@ export default {
   },
   data() {
     return {
-      info: this.$store.state.info.data
+      info: this.$store.state.info.data,
+      urlL: 'http://localhost:8080/',
+      urlH: 'https://lembreseetestee.herokuapp.com/'
     };
   },
   methods: {
     getAll() {
       this.axios
-        .get("http://localhost:8080/")
+        // .get(`${this.urlH}`)
+        .get(`${this.urlL}`)
         .then(response => (this.$store.state.info = response));
       // .then(() => console.log(this.$store.state.info.data));
     },
     postStuff() {
       this.axios
-        .post("http://localhost:8080/", {
+        // .post(`${this.urlH}`, {
+        .post(`${this.urlL}`, {
           nome: "",
           desc: ""
         })
@@ -44,7 +49,8 @@ export default {
     mountedOne() {
       let x;
       this.axios
-        .get("http://localhost:8080/")
+        // .get(`${this.urlH}`)
+        .get(`${this.urlL}`)
         .then(response => (this.$store.state.info = response))
         .then(() => console.log(this.$store.state.info.data))
         .then(() => (x = this.$store.state.info.data[0]))
@@ -69,6 +75,10 @@ export default {
 
   display: flex;
   flex-wrap: wrap;
+}
+
+#botao2{
+  max-height: 38px;
 }
 
 #lop {
