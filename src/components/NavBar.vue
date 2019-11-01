@@ -2,11 +2,13 @@
   <div class="navBar">
     
     <nav class="navbar fixed-top navbar-light">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand text-center" href="#">
       <!-- <img src="../assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
       🍂 {{msg}}
     </a>
-    <button id="botao" class="btn btn-light my-2 shadow-none my-sm-0" type="submit"><a class="adif" href="#sobre">Sobre</a></button>
+    <!-- <button id="botao" class="btn btn-light my-2 shadow-none my-sm-0" type="submit">
+      </button> -->
+      <a class="adif" href="#sobre">Sobre</a>
     </nav>
   </div>
 </template>
@@ -35,6 +37,11 @@ li {
 }
 a {
   color: white !important;
+  font-size: 60px;
+  font-family: 'Roboto Slab', serif !important;
+  /* font-family: 'Abel', sans-serif !important; */
+  
+
 }
 
 #botao{
@@ -45,14 +52,20 @@ a {
 }
 
 .adif{
-  color: black !important;
-  padding: 10px 18px 12px 18px; 
+  /* color: black !important; */
+  position: relative;
+  font-size: 28px;
+  left: 30%;
+
 }
 .navbar{
-  border:1.2px solid white;
+  /* border:1.2px solid white; */
   background-color: rgb(26, 192, 26);
-  background:transparent
+  background:transparent;
 
+  display: flex;
+  justify-content: center;
+  list-style: none;
   /* opacity: 0.5; */
 }
 

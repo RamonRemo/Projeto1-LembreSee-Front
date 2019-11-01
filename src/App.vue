@@ -61,9 +61,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   /* min-height: 70px; */
   text-align: center;
+  
   /* color: #ffffff; */
   width: auto;
-  padding-top: 5%;
+  padding-top: 9.7%;
   /* background-image: url("./assets/img4.jpg"); */
   /* background-size: 100% 100%; */
   /* background-position: 50% 50%; */

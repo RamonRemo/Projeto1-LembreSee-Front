@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="tela1main">
     
     <button id="botao2" class="btn btn-light shadow-none" @click="postStuff">+</button>
 
@@ -68,10 +68,15 @@ export default {
 </script>
 
 <style>
+.tela1main {
+  padding-top: 0%; 
+}
+
 .tela1 {
   /* border: 1px solid red; */
   min-height: 750px;
   max-width: 100%;
+  padding-top: 5%; 
 
   display: flex;
   flex-wrap: wrap;
