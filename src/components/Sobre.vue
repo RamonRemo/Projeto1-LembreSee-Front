@@ -1,7 +1,9 @@
 <template>
   <div class="sobre" id="sobre">
-    <br><br><h1>Sobre</h1><br><br>
-
+    <br>
+    <br>
+    <br>
+    <br>
     <h3>Inicialmente, O LembreSee era apenas uma idéia pra praticar.</h3>
     <h3>
       Acabei gostando e decidi transformá-lo no meu primeiro projeto pessoal.
@@ -16,9 +18,10 @@
     </h3>
 
     <br><h1>Tecnologias Utilizadas</h1><br><br>
-    <h3>Java e SpringBoot no back.<a href="https://github.com/RamonRemo/Projeto1-LembreSee-back"> (Aqui!)</a></h3>
-    <h3>VueJS com um pouco de BootStrap no front. <a href="https://github.com/RamonRemo/Projeto1-LembreSee-Front"> (Aqui!)</a></h3> 
+    <h3>Java e SpringBoot no back. (<a href="https://github.com/RamonRemo/Projeto1-LembreSee-back"> Codigo</a>, <a href="https://lembreseetestee.herokuapp.com"> API</a>)</h3>
+    <h3>VueJS com um pouco de BootStrap no front. (<a href="https://github.com/RamonRemo/Projeto1-LembreSee-Front"> Aqui!</a>)</h3> 
     <h3>H2 no banco.(era um dos poucos que o heroku aceitava no modo gratuito haha)</h3>
+    <H3> a Api </H3>
 
     <br><h1>O quem vem por aí?</h1><br><br>
     <h3> Como eu disse, ainda tenho muito o que melhorar, algumas coisas não fiz por falta de tempo outras por falta de conhecimento e outras por preguiça mesmo.
@@ -69,16 +72,19 @@
 .sobre{
   /* background-color:grey; */
   /* background-image: url('https://images.pexels.com/photos/552789/pexels-photo-552789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
-  background-image: url('https://images.pexels.com/photos/2524767/pexels-photo-2524767.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  /* background-image: url('https://images.pexels.com/photos/2524767/pexels-photo-2524767.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'); */
   /* background-image: url('https://images.pexels.com/photos/159020/sunset-sky-afterglow-evening-sky-159020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
   min-height: 750px;
   /* max-width: 100%; */
-  /* font-family: 'Abel', sans-serif !important; */
-  font-family: 'Amatic SC', cursive !important;
-  color:white;
+  /* height: 100%; */
 
+  font-family: 'Abel', sans-serif !important;
+  /* font-family: 'Amatic SC', cursive !important; */
+  /* font-family: 'Roboto Slab', serif !important; */
+
+  color:white;
 
 }
 

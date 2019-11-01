@@ -1,14 +1,14 @@
 <template>
   <div class="navBar">
     
-    <nav class="navbar fixed-top navbar-light">
-    <a class="navbar-brand text-center" href="#">
+    <nav class="navbar fixed-top navbar-light"> 
+    <a class="navbar-brand text-center"  @click="$store.state.componente = 'Tela1'" href="#">
       <!-- <img src="../assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
       🍂 {{msg}}
     </a>
     <!-- <button id="botao" class="btn btn-light my-2 shadow-none my-sm-0" type="submit">
       </button> -->
-      <a class="adif" href="#sobre">Sobre</a>
+      <a class="adif" href="#" @click="sobrezudo">Sobre</a>
     </nav>
   </div>
 </template>
@@ -18,6 +18,19 @@ export default {
   name: 'Lembresee',
   props: {
     msg: String
+  },
+  methods: {
+    sobrezudo() {
+      document.body.style.backgroundImage= 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSd9kjJFplympSyoaHpEenIQOI8h1DwoMpIcqCSk49H5UIs3gIw")'
+
+      
+
+      
+      // document.body.style.backgroundSize  =  '100%'
+      // document.body.style.backgroundRepeat = 'no-repeat'
+      document.body.style.backgroundSize = 'cover'
+      this.$store.state.componente = 'Sobre'
+    },
   }
 }
 </script>

@@ -26,10 +26,39 @@ export default {
     return {
       info: this.$store.state.info.data,
       urlL: 'http://localhost:8080/',
-      urlH: 'https://lembreseetestee.herokuapp.com/'
+      urlH: 'https://lembreseetestee.herokuapp.com/',
+
+      images:[
+        "../assets/img11.jpeg",
+        // "../assets/img8.jpeg",
+        // "../assets/img11.jpeg",
+        // "../assets/img12.jpeg",
+        // "../assets/img13.jpeg",
+        // "../assets/img14.jpeg",
+        // "../assets/img17.jpeg",
+        // "../assets/img18.jpeg",
+        // "../assets/img24.jpeg",
+        // "../assets/img27.jpeg",
+        // "../assets/img29.jpeg",
+      ],
+      images2:[
+        // "https://images.unsplash.com/photo-1557683304-673a23048d34?ixlib=rb-1.2.1&auto=format&fit=crop&w=486&q=80",
+        "https://wallpaperaccess.com/full/1155088.png",
+
+      ],
+      
     };
   },
   methods: {
+    changeBackgroundImage() {
+      this.item = this.images2[Math.floor(Math.random() * this.images2.length)]
+      // document.body.style.backgroundImage= 'url(' + require(`${this.item}`) + ')'
+      document.body.style.backgroundImage= 'url(' + `${this.item}` + ')'
+      // document.body.style.backgroundImage= 'url("https://i.pinimg.com/564x/94/a2/5e/94a25e17ae123104e5e074729356e29c.jpg")'
+
+      document.body.style.backgroundSize  =  '100%'
+      // document.body.style.backgroundRepeat = 'repeat'
+    },
     getAll() {
       this.axios
         // .get(`${this.urlH}`)
@@ -38,6 +67,7 @@ export default {
       // .then(() => console.log(this.$store.state.info.data));
     },
     postStuff() {
+      console.log(this.$store.state.componente)
       this.axios
         // .post(`${this.urlH}`, {
         .post(`${this.urlL}`, {
@@ -63,13 +93,14 @@ export default {
   },
   mounted() {
     this.mountedOne();
-  }
+    this.changeBackgroundImage()
+  },
 };
 </script>
 
 <style>
 .tela1main {
-  padding-top: 0%; 
+  padding-top: 3.5%; 
 }
 
 .tela1 {
