@@ -52,7 +52,7 @@ export default {
   
   /* color: #ffffff; */
   width: auto;
-  padding-top: 9.7%;
+  /* padding-top: 9.7%; */
   /* background-image: url("./assets/img4.jpg"); */
   /* background-size: 100% 100%; */
   /* background-position: 50% 50%; */

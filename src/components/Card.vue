@@ -43,7 +43,7 @@ export default {
       this.axios
         // .get(`${this.urlH}`)
         .get(`${this.urlL}`)
-        .then(response => (this.$store.state.info = response));
+        .then(response => (this.$store.state.info = response))
       // .then(() => console.log(this.$store.state.info.data));
     },
   }
